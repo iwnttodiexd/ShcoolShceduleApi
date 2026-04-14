@@ -9,9 +9,4 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface SchoolClassMapper extends MapperInterface<SchoolClass, SchoolClassDto> {
 
-    @Mapping(source = "groupIdentifier", target = "groupIdentifier")
-    SchoolClass mapToEntity(SchoolClassDto dto);
-    @Mapping(source = "groupIdentifier", target = "groupIdentifier")
-    SchoolClassDto mapFromEntity(SchoolClass entity);
-
 }

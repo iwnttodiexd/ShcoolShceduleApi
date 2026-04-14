@@ -5,6 +5,6 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotNull;
 
 public record SchoolClassDto(
-        @NotNull @Valid ClassGroup groupIdentifier
+        @NotNull @Valid String groupIdentifier
         ) {
 }
